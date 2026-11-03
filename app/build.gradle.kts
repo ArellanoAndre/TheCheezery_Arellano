@@ -5,11 +5,7 @@ plugins {
 
 android {
     namespace = "arellano.andre.thecheezery_arell"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "arellano.andre.thecheezery_arell"
@@ -20,6 +16,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+
 
     buildTypes {
         release {

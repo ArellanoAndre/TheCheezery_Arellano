@@ -1,38 +1,45 @@
 package arellano.andre.thecheezery_arell.data
 import arellano.andre.thecheezery_arell.R
+import arellano.andre.thecheezery_arell.data.Product
 
-
-val coldDrinks =  listOf<Product>(
-    Product("Caramel Frap", 5.0f,R.drawable.caramel_frap, "Caramel syrup meets coffee, milk and ice and whipped cream and buttery caramel sauce layer the love on top." ),
-    Product("Chocolate Frap", 6f,R.drawable.chocolate_frap, "Rich mocha-flavored sauce meets up with chocolaty chips, milk and ice for a blender bash."),
-    Product("Cold Brew", 3f, R.drawable.coldbrew, "Created by steeping medium-to-coarse ground coffee in room temperature water for 12 hours or longer."),
-    Product("Matcha Latte", 4f,R.drawable.matcha, "Leafy taste of matcha green tea powder with creamy milk and a little sugar for a flavor balance that will leave you feeling ready and raring to go."),
-    Product("Oreo Milkshake", 7f, R.drawable.oreomilkshake, "Chocolate ice cream, and oreo cookies. Topped with whipped cream with cocoa and chocolate syrup.", ),
-    Product("Peanut Milkshake", 7f,R.drawable.peanutmilkshake, "Vanilla ice cream, mixed with peanut butter and chocolate.")
+val coldDrinks = listOf(
+    Product("Caramel Frap", 5f, R.drawable.caramel_frap, "Caramel syrup, coffee, milk and ice."),
+    Product("Chocolate Frap", 6f, R.drawable.chocolate_frap, "Chocolate, milk and ice."),
+    Product("Cold Brew", 3f, R.drawable.coldbrew, "Coffee brewed cold for several hours."),
+    Product("Matcha Latte", 4f, R.drawable.matcha, "Matcha tea with creamy milk."),
+    Product("Oreo Milkshake", 7f, R.drawable.oreomilkshake, "Ice cream and Oreo cookies."),
+    Product("Peanut Milkshake", 7f, R.drawable.peanutmilkshake, "Vanilla ice cream and peanut butter."),
 )
 
 val hotDrinks = listOf(
-    Product("Latte", 6F, R.drawable.latte, "Coffee drink made with espresso and steamed milk"),
-    Product("Hot chocolate", 5F, R.drawable.hotchocolate, "Heated drink consisting of shaved chocolate, topped with marshmallows."),
-    Product("Espresso", 4F, R.drawable.espresso, "Full-flavored, concentrated form of coffee."),
-    Product("Chai Latte", 6F, R.drawable.chailatte, "Spiced tea concentrate with milk"),
-    Product("Capuccino", 7F, R.drawable.capuccino, "A cappuccino is an espresso-based coffee drink, prepared with steamed foam."),
-    Product("American coffee", 2F, R.drawable.americano, "Espresso with hot water")
+    Product("Latte", 6f, R.drawable.latte, "Espresso and steamed milk."),
+    Product("Hot chocolate", 5f, R.drawable.hotchocolate, "Hot chocolate with marshmallows."),
+    Product("Espresso", 4f, R.drawable.espresso, "Concentrated coffee."),
+    Product("Chai Latte", 6f, R.drawable.chailatte, "Spiced tea with milk."),
+    Product("Capuccino", 7f, R.drawable.capuccino, "Espresso with steamed milk foam."),
+    Product("American coffee", 2f, R.drawable.americano, "Espresso with hot water."),
 )
 
 val sweets = listOf(
-    Product("Blueberry cake", 6F, R.drawable.blueberrycake, "Vanilla cake flavor, topped with cheese topping and blueberries."),
-    Product("Chocolate cupcake", 3F, R.drawable.chocolatecupcake, "Chocolate cupcakes topped with butter cream and cherries"),
-    Product("Lemon tartalette", 4F, R.drawable.lemontartalette, "Pastry shell with a lemon flavored filling"),
-    Product("Red Velvet cake", 6F, R.drawable.redvelvetcake, "Soft, moist, buttery cake topped with an easy cream cheese frosting."),
-    Product("Cherry cheesecake", 7F, R.drawable.strawberrycheesecake, "This cherry topped cheesecake is positively creamy and delicious and will be your new favorite dessert."),
-    Product("Tiramisu", 6F, R.drawable.tiramisu, "Coffee-flavored Italian dessert")
+    Product("Blueberry cake", 6f, R.drawable.blueberrycake, "Vanilla cake with blueberries."),
+    Product("Chocolate cupcake", 3f, R.drawable.chocolatecupcake, "Chocolate cupcake with cream."),
+    Product("Lemon tartalette", 4f, R.drawable.lemontartalette, "Lemon pastry tart."),
+    Product("Red Velvet cake", 6f, R.drawable.redvelvetcake, "Red velvet cake with cream cheese."),
+    Product("Cherry cheesecake", 7f, R.drawable.strawberrycheesecake, "Creamy cheesecake with fruit."),
+    Product("Tiramisu", 6f, R.drawable.tiramisu, "Italian coffee-flavored dessert."),
 )
 
 val salties = listOf(
-    Product("Chicken crepes", 6F, R.drawable.chickencrepes, "Fine crepes stuffed with Alfredo chicken, spinach and mushrooms."),
-    Product("Club Sandwich", 5F, R.drawable.clubsandwich, "A delicious sandwich served with french fries."),
-    Product("Panini", 4F, R.drawable.ic_panini, "Sandwich made with Italian bread served warmed by grilling."),
-    Product("Philly cheese steak", 6F, R.drawable.phillycheesesteak, "Smothered in grilled onions, green peppers, mushrooms, and Provolone."),
-    Product("Nachos", 7F, R.drawable.nachos, "Tortilla chips layered with beef and melted cheddar cheese. Served with fried beans, guacamole, pico de gallo, and sour topping.")
+    Product("Chicken crepes", 6f, R.drawable.chickencrepes, "Crepes with chicken and mushrooms."),
+    Product("Club Sandwich", 5f, R.drawable.clubsandwich, "Sandwich with fries."),
+    Product("Panini", 4f, R.drawable.ic_panini, "Grilled Italian sandwich."),
+    Product("Philly cheese steak", 6f, R.drawable.phillycheesesteak, "Steak sandwich with peppers and cheese."),
+    Product("Nachos", 7f, R.drawable.nachos, "Tortilla chips with cheese and toppings."),
+)
+
+val catalog: Map<Category, List<Product>> = mapOf(
+    Category.HOT_DRINKS to hotDrinks,
+    Category.COLD_DRINKS to coldDrinks,
+    Category.SALTIES to salties,
+    Category.SWEETS to sweets
 )
